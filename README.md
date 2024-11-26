@@ -1,70 +1,92 @@
-# Getting Started with Create React App
+# Expense Tracker Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Project Description
+This **Expense Tracker Application** is a React-based web application that helps users manage their financial transactions by tracking income and expenses. The app provides a clear and straightforward way to add, view, and delete transactions. Users can view their current balance, income, and expense totals, making it an effective tool for personal finance management.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+### Features
+1. **Add Transactions**:
+   - Add transactions with a description and an amount (positive for income, negative for expense).
 
-### `npm start`
+2. **Transaction List**:
+   - Displays a list of all transactions with options to delete individual items.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+3. **Balance Display**:
+   - Shows the current balance based on the transactions.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+4. **Income and Expense Summary**:
+   - Separately displays total income and total expenses.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Technologies Used
+- **React**: Frontend framework for building UI components.
+- **Context API**: For global state management across the app.
+- **CSS**: For styling and layout.
+- **JavaScript**: For logic and functionality.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### How to Run the Project
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/nisch-mhrzn/Expense-Tracker
+   ```
+2. **Navigate to the project directory**:
+   ```bash
+   cd expense-tracker
+   ```
+3. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+4. **Run the application**:
+   ```bash
+   npm start
+   ```
+   The application will open in your default browser at `http://localhost:3000`.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Folder Structure
+```
+src/
+├── components/
+│   ├── AddTransaction.js
+│   ├── Balance.js
+│   ├── Header.js
+│   ├── IncomeExpenses.js
+│   ├── TransactionList.js
+├── context/
+│   ├── GlobalState.js
+│   ├── AppReducer.js
+├── App.css
+├── App.js
+├── index.js
+```
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Functional Details
+1. **Global State**:
+   - Uses the `useReducer` hook and `Context API` to manage the application's state.
+   - `GlobalProvider` wraps the app to provide state and actions globally.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. **Adding Transactions**:
+   - Users can enter a transaction description and amount.
+   - New transactions are added with a unique ID.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. **Deleting Transactions**:
+   - Users can remove transactions from the list, which updates the balance, income, and expense summary.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+4. **Dynamic Calculations**:
+   - The balance, income, and expense values are dynamically updated using array methods like `map` and `reduce`.
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Future Enhancements
+- Add user authentication for personalized data.
+- Introduce categories for better transaction organization.
+- Add graphical visualizations (e.g., pie charts, bar charts) for income and expense breakdowns.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

@@ -27,7 +27,9 @@ This **Expense Tracker Application** is a React-based web application that helps
 - **JavaScript**: For logic and functionality.
 
 ---
-
+## Demo Video
+[Watch the demo video](./expense-tracker\ExpenseTracker.mp4)
+--- 
 ### How to Run the Project
 1. **Clone the repository**:
    ```bash

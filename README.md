@@ -28,7 +28,10 @@ This **Expense Tracker Application** is a React-based web application that helps
 
 ---
 ## Demo Video
-[Watch the demo video](./ExpenseTracker.mp4)
+
+https://github.com/user-attachments/assets/1756dc09-5473-424e-92b6-081fabf85dbe
+
+
 --- 
 ### How to Run the Project
 1. **Clone the repository**:
